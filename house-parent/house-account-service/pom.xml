@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.house</groupId>
+    <artifactId>house-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.house</groupId>
+  <artifactId>house-account-service</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>house-account-service Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+
+  <dependency>
+  	<groupId>com.house</groupId>
+  	<artifactId>house-account-core</artifactId>
+  	<version>0.0.1-SNAPSHOT</version>
+  </dependency>
+    <!-- hessian -->
+  <dependency>
+    <groupId>com.caucho</groupId>
+    <artifactId>hessian</artifactId>
+  </dependency>    
+	<!-- mybatis适配spring的jar 
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis-spring</artifactId>
+	</dependency>	-->
+	<!-- 数据库连接池jar -->
+	<dependency>
+	    <groupId>com.mchange</groupId>
+	    <artifactId>c3p0</artifactId>
+	</dependency>
+	<!-- spring jdbc 
+	                 解决配置数据源时:NoClassDefFoundError: java.lang.NoClassDefFoundError: org/springframework/jdbc/datasource/TransactionAwareDataSourceProxy
+	 -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-jdbc</artifactId>
+	</dependency>
+	<dependency>
+	    <groupId>com.baomidou</groupId>
+	    <artifactId>mybatis-plus</artifactId>
+	</dependency>
+  </dependencies>
+  <build>
+    <finalName>account</finalName>
+  </build>
+</project>

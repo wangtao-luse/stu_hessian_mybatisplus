@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.house</groupId>
+    <artifactId>house-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.house</groupId>
+  <artifactId>house-common</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>house-common</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <!-- lombok 反射+底层使用字节码技术ASM 帮助修改字节码文件，生成get，set方法 -->
+		<dependency>		
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+	    </dependency>
+	    <!-- fastjson : JSONObject 	    -->
+	    <dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		</dependency>
+		<!-- servlet api :   HttpServletRequest		-->
+		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		</dependency>	
+  </dependencies>
+</project>

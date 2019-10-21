@@ -1,0 +1,53 @@
+body{
+	font-size: 14px;
+	color: #333;
+	font-family: "Hiragino Sans GB","Microsoft Yahei UI","Microsoft Yahei","微软雅黑",'Segoe UI',Tahoma,"宋体b8b\4f53",SimSun,sans-serif;
+}
+body,div,ul,li,dd,input,p{padding: 0;margin: 0;}
+h1, h2, h3, h4, h5, h6{
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+img{
+	border: 0;
+	vertical-align: top;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+p{/*待研究*/
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;/*设置字体大小为默认大小,相对于浏览器默认字体大小或 继承body设置的字体大小*/
+    font: inherit;
+    vertical-align: baseline;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix{zoom:1}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.oneline {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.hide{
+	display: none;
+}

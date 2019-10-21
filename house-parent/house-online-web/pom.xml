@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.house</groupId>
+    <artifactId>house-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.house</groupId>
+  <artifactId>house-online-web</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>house-online-web Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+   <dependency>
+    	<groupId>com.house</groupId>
+    	<artifactId>house-public-api</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <!-- spring webmvc -->
+    <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	</dependency>
+	<!-- spring单元测试 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <scope>test</scope>
+		</dependency>
+	<!-- hessian -->
+	<dependency>
+	    <groupId>com.caucho</groupId>
+	    <artifactId>hessian</artifactId>
+	</dependency>
+     <!-- fastjson : JSONObject	    -->
+	<dependency>
+	    <groupId>com.alibaba</groupId>
+	    <artifactId>fastjson</artifactId>
+	</dependency>
+	<!-- servlet api :  HttpServletRequest	-->
+	<dependency>
+	    <groupId>javax.servlet</groupId>
+	    <artifactId>javax.servlet-api</artifactId>
+	</dependency>
+	<!-- junit -->	
+   <dependency>
+	    <groupId>junit</groupId>
+	    <artifactId>junit</artifactId>
+	</dependency>
+	<!-- 解决了HttpMessageNotWritableException：https://blog.csdn.net/feinifi/article/details/81070108	 -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	</dependency>
+	<!-- 对java.lang的拓展 -->
+    <dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		</dependency>
+    <dependency>
+    	<groupId>com.house</groupId>
+    	<artifactId>house-model</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <finalName>online</finalName>
+  </build>
+</project>

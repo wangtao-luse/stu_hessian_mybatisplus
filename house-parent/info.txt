@@ -1,0 +1,10 @@
+1.基本框架:传统的SSM(SpringMvc+Spring+Mybatis+Hessian)
+2.前端:Jquery+JavaScript+html
+3.模板引擎:beetl
+
+
+1.spring整合hessian
+	a.https://blog.csdn.net/jaryle/article/details/52335267
+	b.https://www.iteye.com/blog/elim-1869488#_Toc356333315
+2.springmvc @RequestBody 的注意事项:
+	https://blog.csdn.net/wang1171405487/article/details/80742892

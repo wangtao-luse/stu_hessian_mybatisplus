@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.house</groupId>
+    <artifactId>house-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <groupId>com.house</groupId>
+  <artifactId>house-account-core</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>house-account-core</name>
+  <url>http://maven.apache.org</url>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <dependencies>
+    <!-- 需要调用数据访问数据库 -->
+    <dependency>
+		<groupId>com.house</groupId>
+		<artifactId>house-persist</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+	<!-- 需要实现house-public-api 中的接口 -->    
+    <dependency>
+    	<groupId>com.house</groupId>
+    	<artifactId>house-public-api</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+     <!-- 需要公共的请求和响应对象及常用的帮助类 -->
+    <dependency>
+		<groupId>com.house</groupId>
+		<artifactId>house-common</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+    <dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-webmvc</artifactId>
+	</dependency>
+	 <!-- lombok 反射+底层使用字节码技术ASM 帮助修改字节码文件，生成get，set方法 -->
+	<dependency>		
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+	</dependency>
+
+	
+  </dependencies>
+</project>
